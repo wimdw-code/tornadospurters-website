@@ -357,3 +357,23 @@ footer .fine{
   font-size:.62rem; letter-spacing:.06em; text-transform:uppercase; font-weight:700;
   vertical-align:middle;
 }
+/* ---------- inschrijfknop (CTA) ---------- */
+.btn-primary{
+  display:inline-flex; align-items:center; gap:10px;
+  background:var(--red); color:var(--white);
+  font-family:var(--font); font-weight:800; font-size:1.05rem;
+  padding:16px 28px; border-radius:10px; text-decoration:none;
+  box-shadow:0 4px 14px rgba(161,45,24,.35);
+  transition:background .15s ease, transform .15s ease;
+}
+.btn-primary:hover{ background:var(--red-dark); transform:translateY(-1px); }
+.cta-row{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin-top:16px; }
+.cta-row .ticket-btn{ margin-top:0; }
+@media (max-width:640px){ .btn-primary{ width:100%; justify-content:center; } }
+
+.event-banner{
+  background:var(--red); color:var(--white); text-align:center;
+  padding:10px 16px; font-weight:600; font-size:.95rem;
+}
+.event-banner a{ color:var(--white); font-weight:800; text-decoration:underline; margin-left:8px; white-space:nowrap; }
+
